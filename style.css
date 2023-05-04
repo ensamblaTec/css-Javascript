@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    color: #000;
+}
+
+.texto .texto-ocultar {
+    background-color: coral;
+}
+
+.texto-msg {
+    display: none;
+}
