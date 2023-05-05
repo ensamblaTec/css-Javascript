@@ -1,16 +1,83 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  background-color: antiquewhite;
 }
 
 .contenedor {
-    color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.texto .texto-ocultar {
-    background-color: coral;
+.contenedor-texto {
+  margin-top: 50px;
+  width: 500px;
+}
+
+.contenedor-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-texto {
+  width: 10rem;
 }
 
 .texto-msg {
-    display: none;
+  display: none;
+}
+
+.contenedor-regexp {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-email {
+}
+
+.container-icon {
+}
+
+.icon-fire {
+  font-size: 100px;
+  padding-top: px;
+  color: white;
+}
+
+input[type="email"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+
+input[type="email"]:focus {
+  outline: none;
+}
+
+.icon-fire[data-state="invalid"] {
+  color: white;
+}
+
+.icon-fire[data-state="typing"] {
+  color: yellow;
+}
+
+.icon-fire[data-state="valid"] {
+  color: green;
+}
+
+input[type="email"][data-state="valid"] + label::before {
+  content: "\2713";
+  margin-right: 5px;
+  color: green;
 }
